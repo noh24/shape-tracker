@@ -80,7 +80,7 @@
   "scripts": {
     "build": "webpack --mode=development",
     "build-tw": "tailwindcss -i ./src/css/input.css -o ./src/css/output.css",
-    "start": "npm run build && webpack-dev-server --open --mode=development",
+    "start": "npm run build && npm run build-tw && webpack-dev-server --open --mode=development",
     "lint": "eslint src/*.js",
     "test": "jest --coverage"
   },
